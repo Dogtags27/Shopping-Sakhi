@@ -76,6 +76,7 @@ h6 {
   transition: all 0.5s;
   padding: 22px 0;
   background: #fcfbfc;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
 #header.header-scrolled {
@@ -83,10 +84,18 @@ h6 {
   padding: 12px 0;
 }
 
+#header.logo {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  max-height: 100px;
+
+}
+
 #header .logo h1 {
   font-size: 30px;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 0;
   line-height: 1;
   font-weight: 700;
@@ -99,11 +108,15 @@ h6 {
   color: #222222;
   text-decoration: none;
 }
-
+#header .text{
+  float: right;
+}
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 80px;
+  justify-items: center;
+  padding-right: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -134,7 +147,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   color: #555555;
   white-space: nowrap;
